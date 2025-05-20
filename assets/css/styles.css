@@ -1,27 +1,29 @@
+
+.logo {
+    height: 100px; /* Set the desired logo height */
+}
+
+header {
+    background-color: wheat; /* Change to light green or wheat */
+    padding: 1rem 0.5rem; /* Adjust padding for smaller size */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
 }
-header {
-    background-color: wheat; /* Change to light green or wheat */
-    padding: 1rem 0.5rem; /* Adjust padding for smaller size */
-}
+
 
 .navbar-brand {
-    color: white !important; /* Change link color */
+    color: rgb(75, 138, 85) !important; /* Change link color */
     text-decoration: none !important;
 }
 
 .navbar-brand:hover {
     color: lightgreen !important; /* Change hover color */
     text-decoration: none !important; /* Remove underline */
-}
-
-/* Adjust logo size */
-.logo {
-    height: 40px; /* Reduce logo height */
 }
 
 nav {
@@ -91,18 +93,19 @@ footer {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #ffffff;
     border: none;
     padding: 10px 20px;
-    color: white;
+    color: rgb(161, 123, 123);
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
     border-radius: 5px;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
+.bg-primary {
+    --bs-bg-opacity : 1;
+    background-color: rgb(255 255 255) !important;
 }
 
 @media (max-width: 768px) {
