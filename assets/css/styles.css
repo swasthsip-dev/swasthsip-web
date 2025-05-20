@@ -1,4 +1,3 @@
-
 .logo {
     height: 100px; /* Set the desired logo height */
 }
@@ -15,10 +14,16 @@ body {
     background-color: #f8f9fa;
 }
 
+.custom-heading {
+    color: rgb(199, 145, 44);
+    font-family: Arial, sans-serif;
+  }
+
 
 .navbar-brand {
     color: rgb(75, 138, 85) !important; /* Change link color */
     text-decoration: none !important;
+    font-weight: 800; /* Slightly bolder font */
 }
 
 .navbar-brand:hover {
@@ -71,10 +76,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000;
     background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
 }
 
 .card {
@@ -113,4 +116,32 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        position: float;
+    }
+}
+
+/* Add hover effect for product */
+.product {
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.product:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Slightly darker background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Tagline styling */
+.tagline-text {
+    font-size: 1rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    color: rgb(199, 145, 44); /* Stylish color */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 2px; /* Add spacing between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    margin: 0;
 }
