@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+header {
+    background-color: wheat; /* Change to light green or wheat */
+    padding: 1rem 0.5rem; /* Adjust padding for smaller size */
+}
+
+.navbar-brand {
+    color: white !important; /* Change link color */
+    text-decoration: none !important;
+}
+
+.navbar-brand:hover {
+    color: lightgreen !important; /* Change hover color */
+    text-decoration: none !important; /* Remove underline */
+}
+
+/* Adjust logo size */
+.logo {
+    height: 40px; /* Reduce logo height */
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    flex: 1 1 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
