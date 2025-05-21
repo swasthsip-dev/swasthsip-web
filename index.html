@@ -132,32 +132,61 @@
 </div>
 
 <div class="container my-5">
-    <h3 class="text-center text-primary mb-4">What Our Customers Say</h3>
-    <div class="testimonial-section d-flex overflow-auto">
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card p-3 m-2 rounded shadow-sm">
-            <img src="assets/images/testimonial1.jpg" alt="John Doe" class="testimonial-photo rounded-circle mb-3">
-            <p class="testimonial-text">"Swasthsip products have transformed my mornings! Highly recommend their Ragi Malt."</p>
-            <h5 class="testimonial-author mt-3">- John Doe</h5>
+    <h3 class="text-center mb-4" style="color: #4CAF50;">What Our Customers Say</h3>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/Dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
-        <!-- Testimonial 2 -->
-        <div class="testimonial-card p-3 m-2 rounded shadow-sm">
-            <img src="assets/images/testimonial2.jpg" alt="Jane Smith" class="testimonial-photo rounded-circle mb-3">
-            <p class="testimonial-text">"The quality and taste are unmatched. My family loves it!"</p>
-            <h5 class="testimonial-author mt-3">- Jane Smith</h5>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+                <div class="testimonial-card p-3 m-2 rounded shadow-sm text-center">
+                    <img src="assets/images/person.png" alt="John Doe" class="testimonial-photo rounded-circle mb-3">
+                    <p class="testimonial-text">"Swasthsip products have transformed my mornings! Highly recommend their Ragi Malt."</p>
+                    <h5 class="testimonial-author mt-3">- John Doe</h5>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+                <div class="testimonial-card p-3 m-2 rounded shadow-sm text-center">
+                    <img src="assets/images/person.png" alt="Jane Smith" class="testimonial-photo rounded-circle mb-3">
+                    <p class="testimonial-text">"The quality and taste are unmatched. My family loves it!"</p>
+                    <h5 class="testimonial-author mt-3">- Jane Smith</h5>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+                <div class="testimonial-card p-3 m-2 rounded shadow-sm text-center">
+                    <img src="assets/images/person.png" alt="Emily Brown" class="testimonial-photo rounded-circle mb-3">
+                    <p class="testimonial-text">"Swasthsip's commitment to health and sustainability is inspiring."</p>
+                    <h5 class="testimonial-author mt-3">- Emily Brown</h5>
+                </div>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="carousel-item">
+                <div class="testimonial-card p-3 m-2 rounded shadow-sm text-center">
+                    <img src="assets/images/person.png" alt="Michael Lee" class="testimonial-photo rounded-circle mb-3">
+                    <p class="testimonial-text">"Amazing products and great customer service. Highly satisfied!"</p>
+                    <h5 class="testimonial-author mt-3">- Michael Lee</h5>
+                </div>
+            </div>
         </div>
-        <!-- Testimonial 3 -->
-        <div class="testimonial-card p-3 m-2 rounded shadow-sm">
-            <img src="assets/images/testimonial3.jpg" alt="Emily Brown" class="testimonial-photo rounded-circle mb-3">
-            <p class="testimonial-text">"Swasthsip's commitment to health and sustainability is inspiring."</p>
-            <h5 class="testimonial-author mt-3">- Emily Brown</h5>
-        </div>
-        <!-- Testimonial 4 -->
-        <div class="testimonial-card p-3 m-2 rounded shadow-sm">
-            <img src="assets/images/testimonial4.jpg" alt="Michael Lee" class="testimonial-photo rounded-circle mb-3">
-            <p class="testimonial-text">"Amazing products and great customer service. Highly satisfied!"</p>
-            <h5 class="testimonial-author mt-3">- Michael Lee</h5>
-        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </div>
 

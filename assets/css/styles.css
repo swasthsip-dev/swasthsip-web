@@ -38,14 +38,22 @@ form .btn:hover {
     margin: 0; /* Remove default margin */
 }
 
+/* Ensure the body takes up the full height of the viewport */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Content wrapper to push footer to the bottom */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Testimonial Section */
@@ -85,11 +93,23 @@ body {
 
 /* Testimonial Photo Styling */
 .testimonial-photo {
-    width: 80px; /* Set the size of the photo */
-    height: 80px; /* Ensure the photo is a square */
-    object-fit: cover; /* Ensure the image fits within the circle */
-    border: 2px solid #d4af37; /* Add a golden border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    font-style: italic;
+    color: #4b5320;
+}
+
+/* Testimonial Author */
+.testimonial-author {
+    color: #d4af37;
+    font-weight: bold;
 }
 
 .navbar-brand {
@@ -163,13 +183,11 @@ nav a:hover {
     }
 }
 
+/* Footer styling */
 footer {
-    
-    /* position: fixed; */
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: #343a40;
+    background-color: #343a40; /* Dark background */
+    color: white;
+    text-align: center;
     padding: 1rem 0;
 }
 
