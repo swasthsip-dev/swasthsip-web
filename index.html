@@ -193,7 +193,7 @@
 
 <h3 class="text-center my-4 text-muted">"Your Feedback Fuels Our Growth – Share Your Thoughts!"</h3>
 
-<form target="_blank" action="https://formsubmit.co/dev@swasthsip.in" method="POST" class="p-4 bg-light rounded shadow-sm">
+<form id="feedbackForm" action="https://formsubmit.co/dev@swasthsip.in" method="POST" class="p-4 bg-light rounded shadow-sm">
     <div class="form-group mb-3">
         <div class="form-row row">
             <!-- Full Name -->
@@ -260,5 +260,25 @@
     
      <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <script>
+        document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+          e.preventDefault();
+          const form = e.target;
+        
+          const formData = new FormData(form); // automatically includes all fields
+        
+          fetch("https://script.google.com/macros/s/AKfycbxArwyYPGz7e15rBcTSbKpzpacIG4iN3xtAYLxYmq1cm21Ff7t7B4BVErmJzdx_b4q5/exec", {
+            method: "POST",
+            body: formData  // no headers needed
+          })
+          .then(response => response.text())
+          .then(msg => alert("Submitted: " + msg))
+          .catch(error => alert("Error: " + error));
+        });
+        
+        </script>
+        
 </body>
 </html>
