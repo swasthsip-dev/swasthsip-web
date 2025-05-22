@@ -54,21 +54,26 @@
     
     <!-- Robots Meta Tag -->
     <meta name="robots" content="index, follow">
-
-
+    
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+        $("#header").load("pages/header.html"); 
+        $("#footer").load("pages/footer.html"); 
+    });
+  </script>
+  
 </head>
 <body>
-    <header class="bg-primary text-white py-3">
-        <div class="container d-flex align-items-center justify-content-center">
-            <!-- Logo -->
-            <img src="assets/images/swasthsip.png" alt="Swasthsip Logo" class="logo me-3">
-            <!-- Title -->
-            <h1 class="m-0 text-center flex-grow-1 custom-heading" style="font-family: 'Roboto', sans-serif;">Swasthsip</h1>
-        </div>
-    </header>
+
+    <div id="header"></div>
 
     <!-- Light horizontal line -->
-<hr class="header-divider">
+    <hr class="header-divider">
 
 
     <!-- Stylish tagline -->
@@ -258,46 +263,7 @@
 
     </main>
 
-    <footer class="bg-dark text-center text-white py-4">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/swasthsip" target="_blank" role="button">
-              <i class="bi bi-instagram"></i>
-            </a>
-      
-            <!-- LinkedIn -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/company/swasthsip" target="_blank" role="button">
-              <i class="bi bi-linkedin"></i>
-            </a>
-      
-            <!-- YouTube -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/swasthsip" target="_blank" role="button">
-              <i class="bi bi-youtube"></i>
-            </a>
-      
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/swasthsip" target="_blank" role="button">
-              <i class="bi bi-twitter"></i>
-            </a>
-      
-            <!-- GitHub -->
-            <!-- <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/swasthsip" target="_blank" role="button">
-              <i class="bi bi-github"></i>
-            </a> -->
-          </section>
-          <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-3">
-          &copy; 2023 Swasthsip. All Rights Reserved.
-        </div>
-        <!-- Copyright -->
-      </footer>
+    <div id="footer"></div>
       
       <!-- Add Bootstrap Icons -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
