@@ -7,6 +7,12 @@ header {
     padding: 1rem 0.5rem; /* Adjust padding for smaller size */
 }
 
+/* Light Wheat Header Background */
+.bg-light-wheat {
+    background-color: #f3f1ed; /* Light wheat color */
+}
+
+
 main {
     flex: 1;
 }
@@ -123,6 +129,15 @@ body {
     text-decoration: none !important; /* Remove underline */
 }
 
+/* Change the color of the carousel control icons */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: rgba(76, 175, 80, 0.8); /* Green with transparency */
+    border-radius: 50%; /* Optional: Make it circular */
+    width: 40px; /* Adjust size */
+    height: 40px;
+}
+
 nav {
     margin: 20px 0;
 }
@@ -183,6 +198,13 @@ nav a:hover {
     }
 }
 
+/* Vision and Mission Styling */
+.text-statement {
+    color: #8B4513; /* SaddleBrown color for a warm, earthy tone */
+    font-weight: 600; /* Slightly bold */
+}
+
+
 /* Footer styling */
 footer {
     background-color: #343a40; /* Dark background */
@@ -221,15 +243,16 @@ footer {
     --bs-bg-opacity : 1;
     background-color: rgb(255 255 255) !important;
 }
-
-/* Vision and Mission Colors */
-.text-vision {
-    color: #228B22; /* Forest Green for Vision */
+/* Add spacing between YouTube video and Vision/Mission on mobile */
+@media (max-width: 768px) {
+    .youtube-video {
+        margin-bottom: 20px; /* Add spacing below the video */
+    }
+    .vision-mission {
+        margin-top: 20px; /* Add spacing above the Vision/Mission section */
+    }
 }
 
-.text-mission {
-    color: #32CD32; /* Lime Green for Mission */
-}
 
 @media (max-width: 768px) {
     .product-list {
