@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Swasthsip</title>
+    <meta name="description" content="Get in touch with Swasthsip for inquiries, feedback, or support. Reach us via email, social media, or our contact form.">
+    <meta name="keywords" content="Contact Swasthsip, Swasthsip support, Swasthsip feedback, healthy drinks contact">
+    <meta name="author" content="Swasthsip Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.swasthsip.in/contact.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Us - Swasthsip">
+    <meta property="og:description" content="Reach out to Swasthsip for inquiries, feedback, or support. We're here to help!">
+    <meta property="og:image" content="https://www.swasthsip.in/assets/images/contact-banner.jpg">
+    <meta property="og:url" content="https://www.swasthsip.in/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us - Swasthsip">
+    <meta name="twitter:description" content="Reach out to Swasthsip for inquiries, feedback, or support. We're here to help!">
+    <meta name="twitter:image" content="https://www.swasthsip.in/assets/images/contact-banner.jpg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/product_page.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function(){
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script>
+
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <!-- Header -->
+    <header class="bg-light py-3">
+        <div class="container text-center">
+            <h1 class="display-5">Contact Us</h1>
+            <p class="lead">We'd love to hear from you! Reach out to us for any inquiries or feedback.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <h2 class="mb-4">Send Us a Message</h2>
+                <form id="feedbackForm" action="https://formsubmit.co/dev@swasthsip.in" method="POST" class="p-4 bg-light rounded shadow-sm">
+                    <div class="form-group mb-3">
+                        <div class="form-row row">
+                            <!-- Full Name -->
+                            <div class="col-12 col-md-6 mb-3">
+                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <!-- Email Address -->
+                            <div class="col-12 col-md-6 mb-3">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <textarea placeholder="Your Message" class="form-control" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-lg w-100">Submit Form</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-6">
+                <h2 class="mb-4">Get in Touch</h2>
+                <p>Feel free to reach out to us through any of the following platforms:</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <i class="bi bi-envelope"></i> Email: <a href="mailto:swasthsip@gmail.com">swasthsip@gmail.com</a>
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-instagram"></i> Instagram: <a href="https://www.instagram.com/swasthsip" target="_blank">@swasthsip</a>
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/company/swasthsip" target="_blank">Swasthsip</a>
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-youtube"></i> YouTube: <a href="https://www.youtube.com/channel/UCf1Bcih3RWWGBpnGM5pB4bA" target="_blank">Swasthsip Channel</a>
+                    </li>
+                </ul>
+                <!-- <p>Alternatively, visit us at:</p>
+                <address>
+                    <strong>Swasthsip Headquarters</strong><br>
+                    123 Healthy Street, Wellness City<br>
+                    India, 560001
+                </address> -->
+            </div>
+        </div>
+    </main>
+
+    
+        <!-- Add Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <!-- Bootstrap JS -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+       
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+       
+       <script>
+           document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+             e.preventDefault();
+             const form = e.target;
+           
+             const formData = new FormData(form); // automatically includes all fields
+           
+             fetch("https://script.google.com/macros/s/AKfycbxArwyYPGz7e15rBcTSbKpzpacIG4iN3xtAYLxYmq1cm21Ff7t7B4BVErmJzdx_b4q5/exec", {
+               method: "POST",
+               body: formData  // no headers needed
+             })
+             .then(response => response.text())
+             .then(msg => alert("Submitted: " + msg))
+             .catch(error => alert("Error: " + error));
+           });
+           
+           </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -178,14 +178,40 @@ nav a:hover {
 .product-item h3 {
     margin: 10px 0;
 }
+/* 
+.headline-text {
+    padding-top: 2%;
+    padding-bottom: 0%;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #716f2d;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+} */
 
-.tagline-text {
-    animation: fadeInUp 2s ease-in-out;
-    /* font-family: 'Pacifico', cursive;  */
-    font-size: 2rem; /* Adjust font size for better visibility */
-    color: #d354a2; /* Add an attractive color */
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); Add a subtle shadow for depth */
+/* Headline Styling */
+.headline-text {
+    font-family: 'lora', serif; /* Stylish font for the tagline */
+    font-size: 2rem; /* Big font size for main headline */
+    font-weight: 700; /* Bold for impact */
+    color: #a3854c; /* Dark slate gray for sophistication */
+    /* text-transform: capitalize; Capitalize first letters */
+    letter-spacing: 3px; /* Slight spacing for elegance */
+    /* margin-bottom: 0.5rem; Space below headline */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.15); /* Soft shadow for depth */
 }
+
+/* Responsive font size for smaller screens */
+@media (max-width: 600px) {
+    .headline-text {
+        font-size: 1.8rem; /* Smaller font on mobile */
+        letter-spacing: 1.5px; /* Reduce letter spacing */
+    }
+}
+
 
 @keyframes fadeInUp {
     0% {
@@ -207,7 +233,7 @@ nav a:hover {
 
 /* Footer styling */
 footer {
-    background-color: #343a40; /* Dark background */
+    background-color: #343a40; 
     color: white;
     text-align: center;
     padding: 1rem 0;

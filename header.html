@@ -1,0 +1,108 @@
+<header class="bg-dark-brown text-light py-2">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <!-- Logo and Name -->
+        <a class="d-flex align-items-center mb-2 mb-md-0 text-decoration-none" href="../index.html">
+            <img src="../assets/images/swasthsip.png" alt="Swasthsip Logo" class="logo me-2" style="height: 50px;">
+            <span class="custom-heading swasthsip-text">SwasthSip</span>
+        </a>
+
+        <!-- Menu Items -->
+        <ul class="nav flex-row">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="our-story.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <style >
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    /* --bs-gutter-x: 1.5rem; */
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+        /* Header Styling */
+header {
+    height: auto; /* Adjust height automatically based on content */
+    padding: 0.5rem 0; /* Reduce padding for a smaller height */
+}
+
+/* Logo Styling */
+.logo {
+    height: 50px; /* Smaller logo height */
+}
+
+/* Navigation Menu Styling */
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem; /* Space between menu items */
+}
+
+.nav-link {
+    font-size: 1.6rem; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    text-decoration: none; /* Remove underline */
+    color: #4b5320; /* Dark green color */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-link:hover {
+    color: #8B4513; /* Saddle brown color on hover */
+}
+
+/* Header Background and Text Colors */
+.bg-dark-brown {
+    background-color: #5C4033; /* Dark brown color */
+}
+
+.text-light {
+    color: #F5F5DC !important; /* Light beige color for contrast */
+}
+
+/* SwasthSip Text Styling */
+.swasthsip-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFD700; /* Golden color for SwasthSip */
+}
+
+/* Navigation Menu Styling */
+.nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FFD700; /* Golden color on hover */
+}
+
+/* Responsive Design for Mobile View */
+@media (max-width: 768px) {
+    .nav {
+        justify-content: center; /* Center menu items in mobile view */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Keep font size readable on mobile */
+    }
+}
+
+    </style>
+</header>

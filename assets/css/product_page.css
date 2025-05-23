@@ -1,0 +1,324 @@
+
+    /* Reset and base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    /* body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0e9d2 0%, #d6c9a8 100%);
+      color: #2e2b24;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    } */
+
+    main {
+      flex: 1;
+      padding: 20px 16px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* ROW 1: Image + Text with carousel */
+    .row1 {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      background-color: rgba(255 255 255 / 0.85);
+      border-radius: 15px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 25px rgb(0 0 0 / 0.1);
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .row1 .carousel-container {
+      flex: 1 1 300px;
+      min-width: 280px;
+      max-width: 350px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgb(46 43 36 / 0.15);
+      position: relative;
+      background: #fff;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.4s ease;
+      will-change: transform;
+    }
+    .carousel-slide {
+      min-width: 100%;
+      user-select: none;
+      pointer-events: none;
+    }
+    .carousel-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      pointer-events: auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    .carousel-button {
+      background-color: rgba(46,43,36,0.6);
+      border: none;
+      color: #f2f2d8;
+      font-size: 1.8rem;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    .carousel-button:hover {
+      background-color: #7a5e00;
+    }
+
+    .row1 .text-column {
+      flex: 2 1 400px;
+      color: #4a4332;
+      font-weight: 500;
+    }
+    .row1 .text-column h1 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      color: #2e2b24;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+    .row1 .text-column p {
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+    .row1 .text-column strong {
+      color: #7a5e00;
+    }
+
+    /* ROW 2: Benefits + Video carousel */
+    .row2 {
+      background-color: rgba(255 255 255 / 0.9);
+      border-radius: 15px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 25px rgb(0 0 0 / 0.1);
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .row2 h3 {
+      font-size: 1.8rem;
+      color: #2e2b24;
+      margin-bottom: 25px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-align: center;
+    }
+    .row2 .benefits-list {
+      max-width: 480px;
+      margin: 0 auto 40px;
+      color: #4a4332;
+      font-weight: 500;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+    .row2 .benefits-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      columns: 2;
+      column-gap: 40px;
+    }
+    .row2 .benefits-list li {
+      margin-bottom: 14px;
+      padding-left: 28px;
+      position: relative;
+      break-inside: avoid;
+    }
+    .row2 .benefits-list li::before {
+      content: attr(data-icon);
+      position: absolute;
+      left: 0;
+      font-size: 1.3rem;
+      line-height: 1;
+      top: 3px;
+    }
+    .row2 .benefits-list strong {
+      color: #7a5e00;
+    }
+
+    .video-carousel-container {
+      max-width: 680px;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgb(46 43 36 / 0.15);
+    }
+    .video-carousel-track {
+      display: flex;
+      transition: transform 0.4s ease;
+      will-change: transform;
+    }
+    .video-carousel-slide {
+      min-width: 100%;
+      pointer-events: none;
+      user-select: none;
+      padding: 0 8px;
+      box-sizing: border-box;
+    }
+    .video-carousel-slide iframe {
+      width: 100%;
+      height: 340px;
+      border: none;
+      border-radius: 12px;
+      pointer-events: auto;
+    }
+    .video-carousel-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      pointer-events: auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    .video-carousel-button {
+      background-color: rgba(46,43,36,0.6);
+      border: none;
+      color: #f2f2d8;
+      font-size: 1.8rem;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    .video-carousel-button:hover {
+      background-color: #7a5e00;
+    }
+
+    /* Explore Products Section */
+    .explore-products {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+      padding: 40px 0 10px;
+      max-width: 1200px;
+      margin: 0 auto 60px;
+    }
+    .explore-item {
+      flex: 1 1 140px;
+      max-width: 160px;
+      height: 100px;
+      border: 2px solid #2e2b24;
+      border-radius: 12px;
+      background-color: #f2f2d8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #4a4332;
+      padding: 10px;
+      text-align: center;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+      box-shadow: 2px 2px 8px rgb(0 0 0 / 0.1);
+    }
+    .explore-item:hover {
+      background-color: #7a5e00;
+      color: #f2f2d8;
+      border-color: #7a5e00;
+      box-shadow: 0 4px 12px rgb(122 94 0 / 0.5);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      .row1 {
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 30px;
+      }
+      .row1 .text-column {
+        text-align: center;
+      }
+      .row1 .carousel-container {
+        max-width: 100%;
+        min-width: auto;
+      }
+    }
+    @media (max-width: 450px) {
+      .row2 .benefits-list ul {
+        columns: 1;
+      }
+      .video-carousel-slide iframe {
+        height: 220px;
+      }
+    }
+/* Custom styles for the "Explore More Products" heading */
+.explore-products-heading {
+  display: block;    /* Ensures it takes up full width */
+  width: 100%;       /* Explicitly sets width to 100% */
+  margin-bottom: 1rem; /* Space below the heading */
+  text-align: center; /* Centers the text horizontally */
+}
+
+/* Styles for the overall section */
+.explore-products {
+  padding-top: 3rem;    /* Adds space above the section */
+  padding-bottom: 3rem; /* Adds space below the section */
+}
+
+/* You mentioned a media query for mobile.
+   If the Bootstrap col-sm-6 is not working for some reason,
+   and you *still* want to force 2x2 on smaller screens,
+   you might need a custom flexbox approach for the *cards themselves*.
+   However, given your HTML uses Bootstrap's grid,
+   the existing col-sm-6 should achieve this.
+
+   The following CSS is commented out because it targets a `d-flex > a` structure
+   that isn't present in your current HTML, and Bootstrap's grid should handle it.
+   If you were to completely replace the Bootstrap grid with a custom flexbox layout,
+   then you might use something similar, but it would require changing the HTML structure.
+*/
+/*
+@media (max-width: 767px) {
+  .explore-products .row.g-3 > div[class*="col-"] {
+    max-width: 50%;
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
+*/
+.carousel-button {
+  opacity: 0.15; /* Adjust this value (0.0 to 1.0) to control visibility */
+  transition: opacity 0.3s ease; /* Smooth transition on hover */
+}
+
+.carousel-button:hover {
+  opacity: 1; /* Fully visible on hover for better usability */
+}
+
