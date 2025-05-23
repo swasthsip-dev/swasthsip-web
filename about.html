@@ -1,43 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Swasthsip</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Swasthsip</title>
+  <meta name="description" content="Learn more about Swasthsip - our mission, vision, and values to promote health and well-being through natural and wholesome products." />
+  <meta name="keywords" content="Swasthsip, About Us, Healthy Drinks, Vision, Values, Mission" />
+  <meta name="author" content="Swasthsip Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.swasthsip.in/about.html" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+    /* Earthy wheat and grain-inspired colors */
+    :root {
+      --wheat-gold: #f5deb3;        /* wheat */
+      --grain-beige: #f0e5d8;       /* soft beige */
+      --soil-brown: #8b6d4b;        /* rich brown */
+      --green-agri: #7a9a76;        /* muted agricultural green */
+      --text-dark: #4b3b2b;         /* dark brown text */
+      --text-muted: #7f6b53;        /* muted brown */
+      --highlight: #d2b48c;         /* tan/light brown highlight */
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--grain-beige);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    main {
+      background: var(--wheat-gold);
+      padding: 3rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgb(0 0 0 / 0.07);
+      max-width: 800px;
+      margin: 3rem auto;
+    }
+    h1, h2 {
+      color: var(--soil-brown);
+    }
+    h1 .brand-highlight {
+      color: var(--green-agri);
+      font-weight: 900;
+    }
+    .fst-italic {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    ul li {
+      margin-bottom: 0.9rem;
+      font-size: 1.15rem;
+    }
+    ul li strong {
+      color: var(--soil-brown);
+    }
+    ul li i {
+      color: var(--green-agri);
+      margin-right: 10px;
+    }
+    /* ul li:hover {
+      background-color: var(--highlight);
+      border-radius: 8px;
+      padding-left: 10px;
+      transition: background-color 0.3s ease;
+    } */
+    /* Center the header and footer containers */
+    /* #header, #footer {
+      max-width: 1000px;
+      margin: 0 auto;
+    } */
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>About Swasthsip</h1>
-            <p>Swasthsip is dedicated to providing nutritious and wholesome products that promote health and well-being. Our mission is to empower individuals to lead healthier lives through the consumption of natural and organic foods.</p>
-            <h2>Our Vision</h2>
-            <p>We envision a world where everyone has access to healthy food options that nourish the body and mind.</p>
-            <h2>Our Values</h2>
-            <ul>
-                <li>Quality: We prioritize high-quality ingredients in all our products.</li>
-                <li>Integrity: We believe in transparency and honesty in our sourcing and production processes.</li>
-                <li>Community: We are committed to supporting local farmers and sustainable practices.</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Swasthsip. All rights reserved.</p>
-        <div>
-            <a href="https://www.facebook.com/swasthsip">Facebook</a>
-            <a href="https://www.instagram.com/swasthsip">Instagram</a>
-            <a href="https://www.twitter.com/swasthsip">Twitter</a>
-        </div>
-    </footer>
-    <script src="../assets/js/scripts.js"></script>
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Main Content -->
+  <main>
+    <div class="text-center mb-5">
+      <h1 class="display-4 fw-bold">About <span class="brand-highlight">SwasthSip</span></h1>
+      <p class="fst-italic">Empowering healthier lives through natural and wholesome products.</p>
+    </div>
+
+    <section class="mb-5">
+      <h2 class="mb-3">Our Mission</h2>
+      <p>
+        Swasthsip is dedicated to providing nutritious and wholesome products that promote health and well-being. Our mission is to empower individuals to lead healthier lives through the consumption of natural and organic foods.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="mb-3">Our Vision</h2>
+      <p>
+        We envision a world where everyone has access to healthy food options that nourish the body and mind.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3">Our Values</h2>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-check-circle-fill"></i><strong>Quality:</strong> We prioritize high-quality ingredients in all our products.</li>
+        <li><i class="bi bi-check-circle-fill"></i><strong>Integrity:</strong> We believe in transparency and honesty in our sourcing and production processes.</li>
+        <li><i class="bi bi-check-circle-fill"></i><strong>Community:</strong> We are committed to supporting local farmers and sustainable practices.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- jQuery for loading header and footer -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
 </body>
 </html>

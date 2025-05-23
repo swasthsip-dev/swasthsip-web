@@ -1,3 +1,80 @@
+<style>
+    /* Wheat & Grain Color Palette */
+    :root {
+        --grain-gold: #D4AF37;
+        --wheat-beige: #F5DEB3;
+        --millet-brown: #A0522D;
+        --pea-green: #6B8E23;
+        --soft-white: #FAF3E0;
+    }
+
+    body {
+        background-color: var(--soft-white);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .card {
+        border: none;
+        box-shadow: 0 2px 8px rgba(160, 82, 45, 0.15);
+        border-radius: 12px;
+        background-color: #fff8ef;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(160, 82, 45, 0.25);
+    }
+
+    .card-title {
+        color: var(--millet-brown);
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+    }
+
+    .headline-text {
+        font-family: 'Playfair Display', serif;
+        color: var(--pea-green);
+        font-size: 2.5rem;
+    }
+
+    .testimonial-card {
+        background-color: #fffaf0;
+        border-left: 5px solid var(--grain-gold);
+    }
+
+    .testim
+    onial-text {
+        font-style: italic;
+        color: #4b5320;
+    }
+
+    .testimonial-author {
+        color: var(--millet-brown);
+        font-weight: 600;
+    }
+
+    .btn-dark {
+        background-color: var(--millet-brown);
+        border-color: var(--millet-brown);
+    }
+
+    .btn-dark:hover {
+        background-color: var(--grain-gold);
+        border-color: var(--grain-gold);
+        color: #000;
+    }
+
+    /* Apply background to form section */
+    /* form#feedbackForm {
+        background-color: #fdf6e3;
+    } */
+
+    h3.text-center {
+        font-family: 'Lora', serif;
+        color: var(--pea-green);
+    }
+
 .logo {
     height: 100px; /* Set the desired logo height */
 }
@@ -12,6 +89,36 @@ header {
     background-color: #f3f1ed; /* Light wheat color */
 }
 
+
+.text-statement {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d572c;
+  }
+  
+  .vision-mission p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+  }
+  
+  .youtube-video iframe {
+    border: none;
+    border-radius: 12px;
+  }
+  
+  /* Responsive touch-up for mobile */
+  @media (max-width: 768px) {
+    .vision-mission h3 {
+      font-size: 1.15rem;
+    }
+  
+    .vision-mission p {
+      font-size: 0.95rem;
+    }
+  }
+  
 
 main {
     flex: 1;
@@ -207,8 +314,9 @@ nav a:hover {
 /* Responsive font size for smaller screens */
 @media (max-width: 600px) {
     .headline-text {
-        font-size: 1.8rem; /* Smaller font on mobile */
+        font-size: 1.2rem; /* Smaller font on mobile */
         letter-spacing: 1.5px; /* Reduce letter spacing */
+        padding-bottom: 00;
     }
 }
 

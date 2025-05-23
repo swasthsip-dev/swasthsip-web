@@ -101,10 +101,10 @@
 
     <!-- Add a large image -->
     <div class="banner-image text-center">
-        <img src="assets/images/green_peas.jpg" alt="Swasthsip Banner" class="img-fluid" style="width: 100%; height: auto; max-height: 500px;">
+        <img src="assets/images/cover-image2.png" alt="Swasthsip Banner" class="img-fluid" style="width: 100%; height: auto; max-height: 600px;">
     </div>
 
-<!-- Stylish headline on top -->
+<!-- Stylish headline on top -->    
 <div class="headline text-center my-3">
     <h1 class="headline-text">Discover The Taste of Tradition</h1>
 </div>
@@ -131,11 +131,11 @@
             </div>
             <!-- Product 2 -->
             <div class="col-md-4 mb-4">
-                <a href="products/green-peas-malt.html" class="text-decoration-none">
+                <a href="products/Moong Mylk+.html" class="text-decoration-none">
                     <div class="card">
                         <img src="assets/images/img4.jpg" class="card-img-top" alt="Green Peas Malt">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Green Peas Malt</h5>
+                            <h5 class="card-title">Moong Mylk+</h5>
                         </div>
                     </div>
                 </a>
@@ -186,24 +186,37 @@
             </div>
         </div>
 
-        <div class="container my-5">
-            <div class="row align-items-center">
-                <!-- YouTube Video -->
-                <div class="col-md-8 youtube-video">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/otTmkMII8NI41rsz" title="YouTube video" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <!-- Vision and Mission -->
-                <div class="col-md-4 vision-mission">
-                    <h3 class="text-statement">Our Vision</h3>
-                    <p>To provide nourishing and healthy products that enrich lives and promote well-being.</p>
-                    <h3 class="text-statement">Our Mission</h3>
-                    <p>To deliver high-quality, sustainable, and innovative products that cater to the needs of our customers.</p>
+        <!-- Vision & Mission Section -->
+        <div class="container my-5 py-4 px-3 rounded-4 shadow-sm bg-light">
+            <div class="row align-items-center gy-4">
+            <!-- Video Section -->
+            <div class="col-lg-7">
+                <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+                <iframe
+                    src="https://www.youtube.com/embed/otTmkMII8NI41rsz"
+                    title="SwasthSip Vision Video"
+                    allowfullscreen
+                ></iframe>
                 </div>
             </div>
+        
+            <!-- Vision & Mission Text -->
+            <div class="col-lg-5">
+                <div class="ps-lg-4">
+                <h3 class="fw-bold mb-3 text-success">🌿 Our Vision</h3>
+                <p class="text-muted mb-4 fs-6">
+                    To provide nourishing and healthy products that enrich lives and promote well-being — one sip at a time.
+                </p>
+        
+                <h3 class="fw-bold mb-3 text-success">🎯 Our Mission</h3>
+                <p class="text-muted fs-6">
+                    To deliver high-quality, sustainable, and innovative products rooted in tradition and tailored for today's lifestyle.
+                </p>
+                </div>
+            </div>
+            </div>
         </div>
-
+        
 <div class="container my-5">
     <h3 class="text-center mb-4" style="color: #4CAF50;">What Our Customers Say</h3>
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -266,24 +279,46 @@
 
 <h3 class="text-center my-4 text-muted">"Your Feedback Fuels Our Growth – Share Your Thoughts!"</h3>
 
-<form id="feedbackForm" action="https://formsubmit.co/dev@swasthsip.in" method="POST" class="p-4 bg-light rounded shadow-sm">
-    <div class="form-group mb-3">
-        <div class="form-row row">
-            <!-- Full Name -->
-            <div class="col-12 col-md-6 mb-3">
-                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-            </div>
-            <!-- Email Address -->
-            <div class="col-12 col-md-6 mb-3">
-                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-            </div>
+<div class="row g-5">
+    <!-- Contact Form -->
+    <div class="col-md-12  ">
+      <h2>Send Us a Message</h2>
+      <form id="feedbackForm" action="https://formsubmit.co/dev@swasthsip.in" method="POST" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="John Doe" required />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="example@mail.com" required />
+          </div>
         </div>
+
+        <div class="mb-3">
+          <label for="message">Your Message</label>
+          <textarea name="message" id="message" class="form-control" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <div id="formLoader" class="text-center my-3" style="display: none;">
+          <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <p class="mt-2">Submitting your message...</p>
+        </div>
+
+        <div id="formSuccess" class="alert alert-success text-center mt-4" style="display: none;">
+          🎉 Thank you! Your message has been submitted.
+        </div>
+
+        <div id="formError" class="alert alert-danger text-center mt-4" style="display: none;">
+          ❌ Oops! Something went wrong. Please try again.
+        </div>
+
+        <button type="submit" class="btn">Submit Form</button>
+      </form>
     </div>
-    <div class="form-group mb-3">
-        <textarea placeholder="Your Message" class="form-control" name="message" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-dark btn-lg w-100">Submit Form</button>
-</form>
+
 
     </main>
 
@@ -295,23 +330,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     
     
-    <script>
+   <script>
         document.getElementById("feedbackForm").addEventListener("submit", function(e) {
           e.preventDefault();
+      
+          // Hide previous messages and show loader
+          document.getElementById("formSuccess").style.display = "none";
+          document.getElementById("formError").style.display = "none";
+          document.getElementById("formLoader").style.display = "block";
+      
           const form = e.target;
-        
-          const formData = new FormData(form); // automatically includes all fields
-        
+          const formData = new FormData(form);
+      
           fetch("https://script.google.com/macros/s/AKfycbxArwyYPGz7e15rBcTSbKpzpacIG4iN3xtAYLxYmq1cm21Ff7t7B4BVErmJzdx_b4q5/exec", {
             method: "POST",
-            body: formData  // no headers needed
+            body: formData
           })
           .then(response => response.text())
-          .then(msg => alert("Submitted: " + msg))
-          .catch(error => alert("Error: " + error));
+          .then(msg => {
+            document.getElementById("formLoader").style.display = "none";
+            document.getElementById("formSuccess").style.display = "block";
+            form.reset();
+          })
+          .catch(error => {
+            document.getElementById("formLoader").style.display = "none";
+            document.getElementById("formError").style.display = "block";
+          });
         });
-        
-        </script>
+      </script>
         
             <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -332,5 +378,83 @@
         </script>
         
     <div id="footer"></div>
+
+    <style>
+    /* Wheat & Grain Color Palette */
+    :root {
+        --grain-gold: #D4AF37;
+        --wheat-beige: #F5DEB3;
+        --millet-brown: #A0522D;
+        --pea-green: #6B8E23;
+        --soft-white: #FAF3E0;
+    }
+
+    body {
+        background-color: var(--soft-white);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .card {
+        border: none;
+        box-shadow: 0 2px 8px rgba(160, 82, 45, 0.15);
+        border-radius: 12px;
+        background-color: #fff8ef;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(160, 82, 45, 0.25);
+    }
+
+    .card-title {
+        color: var(--millet-brown);
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+    }
+
+    .headline-text {
+        font-family: 'Playfair Display', serif;
+        color: var(--pea-green);
+        font-size: 2.5rem;
+    }
+
+    .testimonial-card {
+        background-color: #fffaf0;
+        border-left: 5px solid var(--grain-gold);
+    }
+
+    .testimonial-text {
+        font-style: italic;
+        color: #4b5320;
+    }
+
+    .testimonial-author {
+        color: var(--millet-brown);
+        font-weight: 600;
+    }
+
+    .btn-dark {
+        background-color: var(--millet-brown);
+        border-color: var(--millet-brown);
+    }
+
+    .btn-dark:hover {
+        background-color: var(--grain-gold);
+        border-color: var(--grain-gold);
+        color: #000;
+    }
+
+    /* Apply background to form section */
+    form#feedbackForm {
+        background-color: #fdf6e3;
+    }
+
+    h3.text-center {
+        font-family: 'Lora', serif;
+        color: var(--pea-green);
+    }
+</style>
+
 </body>
 </html>
