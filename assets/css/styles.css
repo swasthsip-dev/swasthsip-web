@@ -285,23 +285,10 @@ nav a:hover {
 .product-item h3 {
     margin: 10px 0;
 }
-/* 
-.headline-text {
-    padding-top: 2%;
-    padding-bottom: 0%;
-    font-family: 'Lora', serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #716f2d;
-    text-transform: capitalize;
-    letter-spacing: 3px;
-    margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
-} */
 
 /* Headline Styling */
 .headline-text {
-    font-family: 'lora', serif; /* Stylish font for the tagline */
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem; /* Big font size for main headline */
     font-weight: 700; /* Bold for impact */
     color: var(--pea-green);
