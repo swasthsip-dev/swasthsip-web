@@ -31,12 +31,12 @@
         font-family: 'Playfair Display', serif;
         font-weight: bold;
     }
-
+/* 
     .headline-text {
         font-family: 'Playfair Display', serif;
         color: var(--pea-green);
         font-size: 2.5rem;
-    }
+    } */
 
     .testimonial-card {
         background-color: #fffaf0;
@@ -304,7 +304,7 @@ nav a:hover {
     font-family: 'lora', serif; /* Stylish font for the tagline */
     font-size: 2rem; /* Big font size for main headline */
     font-weight: 700; /* Bold for impact */
-    color: #a3854c; /* Dark slate gray for sophistication */
+    color: var(--pea-green);
     /* text-transform: capitalize; Capitalize first letters */
     letter-spacing: 3px; /* Slight spacing for elegance */
     /* margin-bottom: 0.5rem; Space below headline */
