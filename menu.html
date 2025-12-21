@@ -81,7 +81,7 @@
 
         body {
             background-color: var(--bg-color);
-            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
+            font-family: 'Segoe UI', 'Roboto', 'Comic Sans MS', sans-serif;
             color: var(--primary-brown);
             margin: 0;
             padding: 10px;
@@ -138,9 +138,28 @@
             .menu-wrapper { padding: 20px; }
         }
 
-        h1 { text-align: center; font-size: 2.2rem; margin-bottom: 30px; }
-        h2 { color: var(--accent-orange); font-size: 2rem; margin: 0; }
-        h3 { font-size: 1.4rem; margin: 20px 0 10px 0; border-bottom: 1px solid rgba(93, 46, 20, 0.2); display: inline-block; }
+        h1 { 
+            text-align: center; 
+            font-size: 2.2rem; 
+            margin-bottom: 30px;
+            font-family: 'Lora', serif;
+            font-weight: bold;
+        }
+        h2 { 
+            color: var(--accent-orange); 
+            font-size: 2rem; 
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+        }
+        h3 { 
+            font-size: 1.4rem; 
+            margin: 20px 0 10px 0; 
+            border-bottom: 1px solid rgba(93, 46, 20, 0.2); 
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
 
         /* Headers for prices */
         .price-header {
@@ -165,9 +184,23 @@
 
         .menu-item:hover { background: rgba(211, 84, 0, 0.05); }
 
-        .name-group { display: flex; flex-direction: column; }
-        .item-name { font-weight: bold; font-size: 1.1rem; }
-        .item-desc { font-size: 0.8rem; color: #7f8c8d; font-style: italic; }
+        .name-group { 
+            display: flex; 
+            flex-direction: column; 
+            font-family: 'Roboto', sans-serif;
+        }
+        .item-name { 
+            font-weight: bold; 
+            font-size: 1.1rem;
+            font-family: 'Roboto', sans-serif;
+            color: var(--primary-brown);
+        }
+        .item-desc { 
+            font-size: 0.8rem; 
+            color: #7f8c8d; 
+            font-style: italic;
+            font-family: 'Roboto', sans-serif;
+        }
         
         .dots { border-bottom: 2px dotted var(--primary-brown); margin: 0 10px; height: 16px; opacity: 0.3; }
 
