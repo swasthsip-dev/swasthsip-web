@@ -1,332 +1,332 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwasthSip Interactive Menu</title>
-    
-    <!-- Stylesheets -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SwasthSip Interactive Menu</title>
+        
+        <!-- Stylesheets -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
 
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script>
+            $(function(){
+                $("#header").load("header.html"); 
+                $("#footer").load("footer.html"); 
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <!-- Stylish tagline -->
+        <div class="tagline text-center my-4">
+            <h1 class="tagline-heading">Welcome to <span class="highlight">SwasthSip</span> - Healthy Traditional Drinks of
+            <span class="flag-color">Bharath</span>
+            </h1>
+        </div>
+
+        <div id="header" style="display: flex; justify-content: center;"></div>
+
+        <!-- Tagline and Header Styling -->
+        <style>
+            /* Tagline Styling */
+            .tagline-heading {
+                font-family: 'lora', serif;
+                font-size: 1.8rem;
+                color: #4b5320;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+                margin: 0;
+            }
+
+            .tagline-heading .highlight {
+                color: #b86e25;
+                font-weight: bold;
+            }
+
+            .flag-color {
+                background: linear-gradient(90deg, #FF9933 33%, #FFFFFF 33%, #FFFFFF 66%, #138808 66%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: bold;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            }
+
+            @media (max-width: 768px) {
+                .tagline-heading {
+                    font-size: 1.5rem;
+                }
+            }
+
+            /* Wheat & Grain Color Palette */
+            :root {
+                --grain-gold: #D4AF37;
+                --wheat-beige: #F5DEB3;
+                --millet-brown: #A0522D;
+                --pea-green: #6B8E23;
+                --soft-white: #FAF3E0;
+                --primary-brown: #5D2E14;
+                --accent-orange: #D35400;
+                --power-green: #27ae60;
+                --bg-color: #E9E6C9;
+            }
+
+            body {
+                background-color: var(--bg-color);
+                font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
+                color: var(--primary-brown);
+                margin: 0;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #header {
+                width: 100%;
+                margin: 0 0 20px 0;
+            }
+
+            #header header {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .tagline {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            #footer {
+                width: 100vw;
+                margin-left: calc(-50vw + 50%);
+                width: 100vw;
+            }
+
+            #footer footer {
+                width: 100%;
+            }
+
+            .menu-wrapper {
+                background-color: var(--bg-color);
+                border: 2px solid var(--primary-brown);
+                max-width: 950px;
+                width: 100%;
+                padding: 40px;
+                position: relative;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+
+            /* Responsive Grid System */
+            .main-layout {
+                display: grid;
+                grid-template-columns: 1.2fr 0.8fr;
+                gap: 50px;
+            }
+
+            @media (max-width: 850px) {
+                .main-layout { grid-template-columns: 1fr; gap: 30px; }
+                .menu-wrapper { padding: 20px; }
+            }
+
+            h1 { text-align: center; font-size: 2.2rem; margin-bottom: 30px; }
+            h2 { color: var(--accent-orange); font-size: 2rem; margin: 0; }
+            h3 { font-size: 1.4rem; margin: 20px 0 10px 0; border-bottom: 1px solid rgba(93, 46, 20, 0.2); display: inline-block; }
+
+            /* Headers for prices */
+            .price-header {
+                display: grid;
+                grid-template-columns: 1fr 70px 70px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            /* Menu Item Row Alignment */
+            .menu-item {
+                display: grid;
+                grid-template-columns: auto 1fr 70px 70px;
+                align-items: center;
+                margin-bottom: 12px;
+                cursor: pointer;
+                transition: background 0.2s;
+                padding: 2px 5px;
+                border-radius: 5px;
+            }
+
+            .menu-item:hover { background: rgba(211, 84, 0, 0.05); }
+
+            .name-group { display: flex; flex-direction: column; }
+            .item-name { font-weight: bold; font-size: 1.1rem; }
+            .item-desc { font-size: 0.8rem; color: #7f8c8d; font-style: italic; }
+            
+            .dots { border-bottom: 2px dotted var(--primary-brown); margin: 0 10px; height: 16px; opacity: 0.3; }
+
+            .price { text-align: center; font-weight: bold; font-size: 1.1rem; }
+            .power { color: var(--power-green); }
+
+            /* Modal Popup */
+            #modal-overlay {
+                display: none;
+                position: fixed;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0,0,0,0.6);
+                z-index: 100;
+            }
+            #benefit-popup {
+                display: none;
+                position: fixed;
+                top: 50%; left: 50%;
+                transform: translate(-50%, -50%);
+                background: white;
+                padding: 30px;
+                border-radius: 15px;
+                width: 90%;
+                max-width: 450px;
+                z-index: 101;
+                text-align: center;
+                border: 5px solid var(--accent-orange);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            }
+            .close-btn {
+                margin-top: 20px;
+                padding: 12px 30px;
+                background: var(--primary-brown);
+                color: white;
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+        </style>
+    <div class="menu-wrapper">
+        <h1>SwasthSip Menu Card</h1>
+        <h2>Drinks</h2>
+
+        <div class="main-layout">
+            <div class="column">
+                <h3>Ragi (Finger millet)</h3>
+                <div class="price-header">
+                    <div></div><div class="price">Classic</div><div class="price">Power</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Ragi Nuts', 'Packed with Calcium for bones and Vitamin D. Jaggery provides iron while nuts offer brain-boosting healthy fats.')">
+                    <div class="name-group"><span class="item-name">Ragi Nuts</span><span class="item-desc">(Jaggery, Dry Fruits)</span></div>
+                    <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Ragi Nuts (Salt)', 'The salt helps replenish electrolytes. Roasted nuts provide protein and minerals without the spike in blood sugar.')">
+                    <div class="name-group"><span class="item-name">Ragi Nuts (Salt)</span><span class="item-desc">(Salt, Roasted Dry Fruits)</span></div>
+                    <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Ragi Malt', 'High alkaline content aids digestion. It has a low glycemic index, making it great for steady energy.')">
+                    <div class="name-group"><span class="item-name">Ragi Malt</span><span class="item-desc">(Milk, Dry Fruits, Jaggery)</span></div>
+                    <div class="dots"></div><div class="price">₹30</div><div class="price power">₹45</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Ragi Malt Natural', 'Uses dates for natural sweetness. Dates are high in fiber and disease-fighting antioxidants.')">
+                    <div class="name-group"><span class="item-name">Ragi Malt Natural</span><span class="item-desc">(Milk, Dry Fruits, dates)</span></div>
+                    <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Ragi Ambali', 'Natural cooling agent for the body. Fermentation creates probiotics that strengthen gut immunity.')">
+                    <div class="name-group"><span class="item-name">Ragi Ambali</span><span class="item-desc">(Fermented Ragi, Curd)</span></div>
+                    <div class="dots"></div><div class="price">₹30</div><div class="price power">₹45</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Moong Nutrishake', 'Rich in plant protein and Amino acids. Helps in muscle repair and is very easy on the stomach.')">
+                    <div class="name-group"><span class="item-name">Moong Nutrishake</span><span class="item-desc">Moong, Milk, Dry Fruits</span></div>
+                    <div class="dots"></div><div class="price">₹50</div><div class="price power">₹65</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Hurali Pulse', 'Known as Horse Gram. It is a legendary fat burner and aids in clearing respiratory issues.')">
+                    <div class="name-group"><span class="item-name">Hurali Pulse</span><span class="item-desc">Horse gram, Dry Fruits</span></div>
+                    <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
+                </div>
+
+                <h3>Mixed Millet</h3>
+                <div class="menu-item" onclick="pop('Millets Sweet', 'A blend of multigrains. Jaggery helps detoxify the liver while the grains provide complex carbs.')">
+                    <div class="name-group"><span class="item-name">Millets Sweet</span><span class="item-desc">(Millets, Jaggery, Dry Fruits)</span></div>
+                    <div class="dots"></div><div class="price">₹55</div><div class="price power">₹70</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Millets Salt', 'Perfect for Diabetic-friendly snacking. High magnesium content helps in maintaining heart health.')">
+                    <div class="name-group"><span class="item-name">Millets Salt</span><span class="item-desc">(Millets, Salt, Roasted Dry Fruits)</span></div>
+                    <div class="dots"></div><div class="price">₹55</div><div class="price power">₹70</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Jola Ganji', 'Jowar is gluten-free and high in Vitamin B. Helps build lean muscle and improves circulation.')">
+                    <div class="name-group"><span class="item-name">Jola Ganji</span><span class="item-desc">(Jowar porridge)</span></div>
+                    <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('ABC Juice', 'Apple, Beetroot, Carrot. A detox powerhouse. Boosts immunity and purifies blood for healthy skin.')">
+                    <div class="name-group"><span class="item-name">ABC Juice</span><span class="item-desc">Apple, Beetroot, Carrot</span></div>
+                    <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
+                </div>
+            </div>
+
+            <div class="column">
+                <h3>Laddu</h3>
+                <div class="price-header">
+                    <div></div><div class="price">1 pc</div><div class="price">3 pcs</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Graunut Laddu', 'Peanuts are high in heart-healthy monounsaturated fats. Provides a quick energy boost for kids and athletes.')">
+                    <div class="name-group"><span class="item-name">Graunut Laddu</span><span class="item-desc">(Millets, Jaggery, Dry Fruits)</span></div>
+                    <div class="dots"></div><div class="price">₹15</div><div class="price">₹40</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Millets Laddu', 'High-fiber snack that satisfies hunger without the guilt. Helps regulate cholesterol levels.')">
+                    <div class="name-group"><span class="item-name">Millets Laddu</span><span class="item-desc">(Millets, Salt, Roasted)</span></div>
+                    <div class="dots"></div><div class="price">₹20</div><div class="price">₹50</div>
+                </div>
+
+                <div class="menu-item" onclick="pop('Millets', 'Pure millet goodness. Rich in antioxidants and supports a healthy metabolism.')">
+                    <div class="name-group"><span class="item-name">Millets</span><span class="item-desc">Traditional Grain</span></div>
+                    <div class="dots"></div><div class="price">₹0.0</div><div class="price">₹70</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-overlay" onclick="closePop()"></div>
+    <div id="benefit-popup">
+        <h3 id="pop-title"></h3>
+        <p id="pop-text"></p>
+        <button class="close-btn" onclick="closePop()">Close</button>
+    </div>
+
     <script>
-        $(function(){
-            $("#header").load("header.html"); 
-            $("#footer").load("footer.html"); 
-        });
+        function pop(title, text) {
+            document.getElementById('pop-title').innerText = title;
+            document.getElementById('pop-text').innerText = text;
+            document.getElementById('benefit-popup').style.display = 'block';
+            document.getElementById('modal-overlay').style.display = 'block';
+        }
+        function closePop() {
+            document.getElementById('benefit-popup').style.display = 'none';
+            document.getElementById('modal-overlay').style.display = 'none';
+        }
     </script>
 
-</head>
-<body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Stylish tagline -->
-    <div class="tagline text-center my-4">
-        <h1 class="tagline-heading">Welcome to <span class="highlight">SwasthSip</span> - Healthy Traditional Drinks of
-        <span class="flag-color">Bharath</span>
-        </h1>
-    </div>
+    <!-- Add Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-    <div id="header" style="display: flex; justify-content: center;"></div>
+    <div id="footer"></div>
 
-    <!-- Tagline and Header Styling -->
-    <style>
-        /* Tagline Styling */
-        .tagline-heading {
-            font-family: 'lora', serif;
-            font-size: 1.8rem;
-            color: #4b5320;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            margin: 0;
-        }
-
-        .tagline-heading .highlight {
-            color: #b86e25;
-            font-weight: bold;
-        }
-
-        .flag-color {
-            background: linear-gradient(90deg, #FF9933 33%, #FFFFFF 33%, #FFFFFF 66%, #138808 66%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            .tagline-heading {
-                font-size: 1.5rem;
-            }
-        }
-
-        /* Wheat & Grain Color Palette */
-        :root {
-            --grain-gold: #D4AF37;
-            --wheat-beige: #F5DEB3;
-            --millet-brown: #A0522D;
-            --pea-green: #6B8E23;
-            --soft-white: #FAF3E0;
-            --primary-brown: #5D2E14;
-            --accent-orange: #D35400;
-            --power-green: #27ae60;
-            --bg-color: #E9E6C9;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
-            color: var(--primary-brown);
-            margin: 0;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #header {
-            width: 100%;
-            margin: 0 0 20px 0;
-        }
-
-        #header header {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .tagline {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        #footer {
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-            width: 100vw;
-        }
-
-        #footer footer {
-            width: 100%;
-        }
-
-        .menu-wrapper {
-            background-color: var(--bg-color);
-            border: 2px solid var(--primary-brown);
-            max-width: 950px;
-            width: 100%;
-            padding: 40px;
-            position: relative;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-
-        /* Responsive Grid System */
-        .main-layout {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 50px;
-        }
-
-        @media (max-width: 850px) {
-            .main-layout { grid-template-columns: 1fr; gap: 30px; }
-            .menu-wrapper { padding: 20px; }
-        }
-
-        h1 { text-align: center; font-size: 2.2rem; margin-bottom: 30px; }
-        h2 { color: var(--accent-orange); font-size: 2rem; margin: 0; }
-        h3 { font-size: 1.4rem; margin: 20px 0 10px 0; border-bottom: 1px solid rgba(93, 46, 20, 0.2); display: inline-block; }
-
-        /* Headers for prices */
-        .price-header {
-            display: grid;
-            grid-template-columns: 1fr 70px 70px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 5px;
-        }
-
-        /* Menu Item Row Alignment */
-        .menu-item {
-            display: grid;
-            grid-template-columns: auto 1fr 70px 70px;
-            align-items: center;
-            margin-bottom: 12px;
-            cursor: pointer;
-            transition: background 0.2s;
-            padding: 2px 5px;
-            border-radius: 5px;
-        }
-
-        .menu-item:hover { background: rgba(211, 84, 0, 0.05); }
-
-        .name-group { display: flex; flex-direction: column; }
-        .item-name { font-weight: bold; font-size: 1.1rem; }
-        .item-desc { font-size: 0.8rem; color: #7f8c8d; font-style: italic; }
-        
-        .dots { border-bottom: 2px dotted var(--primary-brown); margin: 0 10px; height: 16px; opacity: 0.3; }
-
-        .price { text-align: center; font-weight: bold; font-size: 1.1rem; }
-        .power { color: var(--power-green); }
-
-        /* Modal Popup */
-        #modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.6);
-            z-index: 100;
-        }
-        #benefit-popup {
-            display: none;
-            position: fixed;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            width: 90%;
-            max-width: 450px;
-            z-index: 101;
-            text-align: center;
-            border: 5px solid var(--accent-orange);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-        .close-btn {
-            margin-top: 20px;
-            padding: 12px 30px;
-            background: var(--primary-brown);
-            color: white;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-    </style>
-<div class="menu-wrapper">
-    <h1>SwasthSip Menu Card</h1>
-    <h2>Drinks</h2>
-
-    <div class="main-layout">
-        <div class="column">
-            <h3>Ragi (Finger millet)</h3>
-            <div class="price-header">
-                <div></div><div class="price">Classic</div><div class="price">Power</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Ragi Nuts', 'Packed with Calcium for bones and Vitamin D. Jaggery provides iron while nuts offer brain-boosting healthy fats.')">
-                <div class="name-group"><span class="item-name">Ragi Nuts</span><span class="item-desc">(Jaggery, Dry Fruits)</span></div>
-                <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Ragi Nuts (Salt)', 'The salt helps replenish electrolytes. Roasted nuts provide protein and minerals without the spike in blood sugar.')">
-                <div class="name-group"><span class="item-name">Ragi Nuts (Salt)</span><span class="item-desc">(Salt, Roasted Dry Fruits)</span></div>
-                <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Ragi Malt', 'High alkaline content aids digestion. It has a low glycemic index, making it great for steady energy.')">
-                <div class="name-group"><span class="item-name">Ragi Malt</span><span class="item-desc">(Milk, Dry Fruits, Jaggery)</span></div>
-                <div class="dots"></div><div class="price">₹30</div><div class="price power">₹45</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Ragi Malt Natural', 'Uses dates for natural sweetness. Dates are high in fiber and disease-fighting antioxidants.')">
-                <div class="name-group"><span class="item-name">Ragi Malt Natural</span><span class="item-desc">(Milk, Dry Fruits, dates)</span></div>
-                <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Ragi Ambali', 'Natural cooling agent for the body. Fermentation creates probiotics that strengthen gut immunity.')">
-                <div class="name-group"><span class="item-name">Ragi Ambali</span><span class="item-desc">(Fermented Ragi, Curd)</span></div>
-                <div class="dots"></div><div class="price">₹30</div><div class="price power">₹45</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Moong Nutrishake', 'Rich in plant protein and Amino acids. Helps in muscle repair and is very easy on the stomach.')">
-                <div class="name-group"><span class="item-name">Moong Nutrishake</span><span class="item-desc">Moong, Milk, Dry Fruits</span></div>
-                <div class="dots"></div><div class="price">₹50</div><div class="price power">₹65</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Hurali Pulse', 'Known as Horse Gram. It is a legendary fat burner and aids in clearing respiratory issues.')">
-                <div class="name-group"><span class="item-name">Hurali Pulse</span><span class="item-desc">Horse gram, Dry Fruits</span></div>
-                <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
-            </div>
-
-            <h3>Mixed Millet</h3>
-            <div class="menu-item" onclick="pop('Millets Sweet', 'A blend of multigrains. Jaggery helps detoxify the liver while the grains provide complex carbs.')">
-                <div class="name-group"><span class="item-name">Millets Sweet</span><span class="item-desc">(Millets, Jaggery, Dry Fruits)</span></div>
-                <div class="dots"></div><div class="price">₹55</div><div class="price power">₹70</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Millets Salt', 'Perfect for Diabetic-friendly snacking. High magnesium content helps in maintaining heart health.')">
-                <div class="name-group"><span class="item-name">Millets Salt</span><span class="item-desc">(Millets, Salt, Roasted Dry Fruits)</span></div>
-                <div class="dots"></div><div class="price">₹55</div><div class="price power">₹70</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Jola Ganji', 'Jowar is gluten-free and high in Vitamin B. Helps build lean muscle and improves circulation.')">
-                <div class="name-group"><span class="item-name">Jola Ganji</span><span class="item-desc">(Jowar porridge)</span></div>
-                <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('ABC Juice', 'Apple, Beetroot, Carrot. A detox powerhouse. Boosts immunity and purifies blood for healthy skin.')">
-                <div class="name-group"><span class="item-name">ABC Juice</span><span class="item-desc">Apple, Beetroot, Carrot</span></div>
-                <div class="dots"></div><div class="price">₹40</div><div class="price power">₹55</div>
-            </div>
-        </div>
-
-        <div class="column">
-            <h3>Laddu</h3>
-            <div class="price-header">
-                <div></div><div class="price">1 pc</div><div class="price">3 pcs</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Graunut Laddu', 'Peanuts are high in heart-healthy monounsaturated fats. Provides a quick energy boost for kids and athletes.')">
-                <div class="name-group"><span class="item-name">Graunut Laddu</span><span class="item-desc">(Millets, Jaggery, Dry Fruits)</span></div>
-                <div class="dots"></div><div class="price">₹15</div><div class="price">₹40</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Millets Laddu', 'High-fiber snack that satisfies hunger without the guilt. Helps regulate cholesterol levels.')">
-                <div class="name-group"><span class="item-name">Millets Laddu</span><span class="item-desc">(Millets, Salt, Roasted)</span></div>
-                <div class="dots"></div><div class="price">₹20</div><div class="price">₹50</div>
-            </div>
-
-            <div class="menu-item" onclick="pop('Millets', 'Pure millet goodness. Rich in antioxidants and supports a healthy metabolism.')">
-                <div class="name-group"><span class="item-name">Millets</span><span class="item-desc">Traditional Grain</span></div>
-                <div class="dots"></div><div class="price">₹0.0</div><div class="price">₹70</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="modal-overlay" onclick="closePop()"></div>
-<div id="benefit-popup">
-    <h3 id="pop-title"></h3>
-    <p id="pop-text"></p>
-    <button class="close-btn" onclick="closePop()">Close</button>
-</div>
-
-<script>
-    function pop(title, text) {
-        document.getElementById('pop-title').innerText = title;
-        document.getElementById('pop-text').innerText = text;
-        document.getElementById('benefit-popup').style.display = 'block';
-        document.getElementById('modal-overlay').style.display = 'block';
-    }
-    function closePop() {
-        document.getElementById('benefit-popup').style.display = 'none';
-        document.getElementById('modal-overlay').style.display = 'none';
-    }
-</script>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Add Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-<div id="footer"></div>
-
-</body>
-</html>
+    </body>
+    </html>
