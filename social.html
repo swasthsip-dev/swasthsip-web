@@ -13,11 +13,25 @@
     h1{margin:0 0 18px;font-family:'Playfair Display',serif;color:var(--muted);font-size:1.6rem}
     p.lead{margin-bottom:22px;color:#6b6b6b}
     .links{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
-    .link-btn{width:150px;height:110px;border-radius:14px;background:linear-gradient(180deg,#f7efe0,#fff7ee);display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;border:1px solid rgba(93,46,20,0.06);color:var(--accent);box-shadow:0 6px 18px rgba(93,46,20,0.06);transition:transform .14s ease,box-shadow .14s ease}
+    .link-btn{width:150px;min-width:140px;height:110px;border-radius:14px;background:linear-gradient(180deg,#f7efe0,#fff7ee);display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;border:1px solid rgba(93,46,20,0.06);color:var(--accent);box-shadow:0 6px 18px rgba(93,46,20,0.06);transition:transform .14s ease,box-shadow .14s ease}
+    .link-btn:focus{outline:3px solid rgba(211,84,0,0.16);outline-offset:3px}
     .link-btn:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(93,46,20,0.12)}
     .link-icon{font-size:32px;margin-bottom:10px;color:var(--accent2)}
-    .link-label{font-weight:600;color:var(--accent)}
-    @media (max-width:520px){.link-btn{width:45%;height:100px}}
+    .link-label{font-weight:600;color:var(--accent);font-size:0.98rem}
+    /* Mobile-friendly touch targets and responsive sizing */
+    @media (max-width:720px){
+      .card-ctn{padding:22px;margin:12px}
+      .link-btn{width:48%;min-width:0;height:100px;border-radius:12px}
+      .link-icon{font-size:28px}
+      .link-label{font-size:0.95rem}
+    }
+    @media (max-width:420px){
+      .links{gap:12px}
+      .link-btn{width:100%;height:88px}
+      .link-icon{font-size:24px}
+      .card-ctn{padding:16px;border-radius:10px}
+      h1{font-size:1.25rem}
+    }
   </style>
 </head>
 <body>
@@ -41,7 +55,7 @@
         <div class="link-label">YouTube</div>
       </a>
 
-      <a class="link-btn" href="https://www.google.com/maps/search/?api=1&query=Swasthsip" target="_blank" rel="noopener" aria-label="Open Google Maps">
+      <a class="link-btn" href="https://maps.app.goo.gl/NVtmPJMbRLpyYLJD7" target="_blank" rel="noopener" aria-label="Open Google Maps">
         <i class="bi bi-geo-alt link-icon" aria-hidden="true"></i>
         <div class="link-label">Google Maps</div>
       </a>
